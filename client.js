@@ -11,8 +11,12 @@ const connect = function() {
   conn.setEncoding("utf8");
   conn.on("connect", () => {
     console.log("Successfully connected to game server")
-    conn.write("Name: NBC")  
-  })
+    conn.write("Name: NBC") 
+  //   setTimeout(() => {
+  //     conn.write("Move: up")  
+      
+  //   }, 2000);
+  // })
 
   return conn;
 }
