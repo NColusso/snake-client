@@ -12,11 +12,11 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Successfully connected to game server")
     conn.write("Name: NBC") 
-  //   setTimeout(() => {
-  //     conn.write("Move: up")  
+    // setTimeout(() => {
+    //   conn.write("Move: up")  
       
-  //   }, 2000);
-  // })
+    // }, 2000);
+  })
 
   return conn;
 }
